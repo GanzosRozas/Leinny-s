@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: "Libre Baskerville","sans-serif";
+    background-color: black;
+    color:white;
+  }
+
+ .comidas{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+ }

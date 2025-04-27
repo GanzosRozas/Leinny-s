@@ -1,0 +1,55 @@
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* coloca elementos a los extremos */
+    padding: 30px 50px;
+    font-family: "Libre Baskerville", "sans-serif";
+    background-color: black;
+    color: white;
+  }
+  
+  .title {
+    text-align: center;
+    flex: 1; /* que tome todo el espacio disponible */
+  }
+  
+  header > .left {
+    width: 64px; /* del mismo tamaño que el ícono del carrito para que quede simétrico */
+  }
+  
+  header > .cuenta {
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  header>.cuenta>a{
+    color: #ffff  ;
+  }
+  .cuenta:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+
+  .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 50px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .card-title{
+    display: flex;
+    justify-content: center;
+  }
+  .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leinny's</title>
+    <link rel="stylesheet" href="../src/styles/mesas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="left"></div>
+        
+        <div class="title">
+            <h1>Leinny's</h1>
+
+        </div>
+
+        <div class="cut">
+            <a href="/src/pages/corteCaja.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-file-earmark-break" viewBox="0 0 16 16">
+                    <path d="M14 4.5V9h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v7H2V2a2 2 0 0 1 2-2h5.5zM13 12h1v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2h1v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1z"/>
+                </svg>
+               
+                  
+            
+            </a>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p id="popupTexto">¿Qué quieres hacer con esta mesa?</p>
+        <button class="btn btn-dark" onclick="irMenu()">agregar a orden</button>
+        <button class="btn btn-dark" onclick="desocuparMesa()">Desocupar</button>
+        <button class="btn btn-dark" onclick="cerrarPopup()">Cancelar</button>
+        <button class="btn btn-dark" onclick="irPagar()">Ir a pagar</button>
+      </div>
+
+    <div class="tables container">
+        <div class="table" id="mesa-1">
+            <h1 class="d-flex justify-content-center">Mesa 1</h1>
+            <img src="./img/tableAble.png" class="imgMesa1" data-id="1" alt="">
+        </div>
+        <div class="table" id="mesa-2">
+            <h1 class="d-flex justify-content-center">Mesa 2</h1>
+            <img src="./img/tableAble.png" class="imgMesa2" data-id="2" alt="">
+        </div>
+        <div class="table" id="mesa-3">
+            <h1 class="d-flex justify-content-center">Mesa 3</h1>
+            <img src="./img/tableAble.png" class="imgMesa3" data-id="3" alt="">
+        </div>
+        <div class="table" id="mesa-4">
+            <h1 class="d-flex justify-content-center">Mesa 4</h1>
+            <img src="./img/tableAble.png" class="imgMesa4" data-id="4" alt="">
+        </div>
+    </div>
+
+    
+    <script src="../src/scripts/registrarMesa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
